@@ -7,7 +7,7 @@ RedBlackTree::RedBlackTree() {
 }
 
 RedBlackTree::~RedBlackTree() {
-	DeleteTree(root);
+	if (root != nullptr) DeleteTree(root);
 	delete(leaf);
 }
 
